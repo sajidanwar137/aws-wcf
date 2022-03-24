@@ -1,0 +1,18 @@
+.subscriber-outer {
+    padding-bottom: 70px;
+    .row{
+        align-items: center;
+    }
+    .heading2{
+        line-height: 1;
+    }
+}
+@media screen and (max-width: 767px) {
+    .subscriber-outer {
+        padding-bottom: 30px;
+        text-align: center;
+        .subscriber-right{
+            display: none;
+        }
+    }
+}

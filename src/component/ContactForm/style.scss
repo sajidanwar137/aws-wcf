@@ -1,0 +1,36 @@
+.active-campaign{
+    margin-bottom: 50px;
+    &__form{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    &__wcf-title{
+        text-align: center;
+        margin-bottom: 25px;
+        padding: 0 5%;
+    }
+    &__wcf-campaign{
+        align-items: center;
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        column-gap:20px;
+        row-gap: 15px;
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+    &__campaign-column{
+        input[type=email],
+        input[type=text]{
+            min-width: 300px;
+            background: #fff;
+            border: 1px solid #387afd;
+            color: #000;
+        }
+        input[type=text]{
+            text-transform: capitalize;
+        }
+    }
+}

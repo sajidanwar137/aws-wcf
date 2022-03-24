@@ -1,0 +1,61 @@
+.best-teams{
+    .head{
+        .heading2{
+            font-weight: 400;
+        }
+    }
+    .download-play{
+        background: #387afd;
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        display: inline-block;
+        padding: 1px 10px;
+        text-transform: uppercase;
+        // font-style: italic;
+        margin-left: 10px;
+        transform: skew(-20deg, 0);
+        transition: all .7s ease;
+        &:hover{
+           color: #000;
+        }
+    }
+    .team-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 750px;
+        margin: 50px auto;
+        li{
+            width: 33.33%;
+            padding: 20px;
+            a{
+                display: inline-block;
+                transition: all .3s ease;
+                transform: translateY(0);
+                &:hover{
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .best-teams{
+        br{
+            display: none;
+        }
+        .download-play{
+            font-size: 14px;
+            margin-top: 13px;
+            clear: both;
+        }
+        .team-list{
+            li{
+                width: 50%;
+                padding: 10px;
+            }
+        }
+    }
+}

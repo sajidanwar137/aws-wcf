@@ -1,0 +1,23 @@
+.blog-subscriber-outer {
+    background: #fff;
+    padding-bottom: 70px;
+    .row{
+        align-items: center;
+    }
+    .heading2{
+        color: #000;
+        line-height: 1;
+    }
+    input[type="text"].form-control{
+        color: #000;
+    }
+}
+@media screen and (max-width: 767px) {
+    .blog-subscriber-outer{
+        padding-bottom: 30px;
+        text-align: center;
+        .blog-subscriber-right{
+            display: none;
+        }
+    }
+}

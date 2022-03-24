@@ -1,0 +1,17 @@
+.brand-outer{
+    .brand-inner{
+        align-items: center;
+        .apps{
+            margin-bottom: 0;
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .brand-outer{
+        .brand-inner{
+            .video-outer{
+                margin: 0 auto 20px;
+            }
+        }
+    }
+}

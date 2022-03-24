@@ -1,0 +1,95 @@
+.blog-list-outer{
+    background: #fff;
+    .container{
+        max-width: 1140px;
+    }
+}
+.blog-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    position: relative;
+    top: -50px;
+    li{
+        width: calc(33.33% - 40px);
+        margin: 0 20px 50px;
+        border-radius: 5px;
+        overflow: hidden;
+        transition: all .5s ease;
+        transform: translateY(0);
+        border-radius: 15px;
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 0 5px #15172d;
+        }
+        .text{
+            padding: 15px 20px;
+            small{
+                display: block;
+                padding-bottom: 8px;
+                color: #999999;
+                font-size: 10px;
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 700;
+                color: #000;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                color: #000;
+            }
+            .one-min{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 0 0 0;
+                span{
+                    color: #999;
+                    font-size: 10px;
+                    display: inline-flex;
+                }
+                figure{
+                    display: inline-flex;
+                }
+            }
+        }
+        .blog-video{
+            max-width: calc(100% + 1px);
+            max-height: 196px;
+            overflow: hidden;
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .blog-list {
+        margin: 0 -10px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .blog-list {
+        li {
+            width: calc(50% - 40px);
+            max-width: 320px;
+            margin: 0 auto 20px;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .blog-list {
+        li {
+            width: calc(100% - 40px);
+        }
+    }
+}
