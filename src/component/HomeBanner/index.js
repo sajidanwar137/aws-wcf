@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom'
 import { FaInstagram,FaTwitter } from 'react-icons/fa';
-import militaryVideo from '../../videos/military.mp4';
+// import militaryVideo from '../../static/media/military.mp4';
 import './style.scss'
 
 const HomeBanner = ({onOpenModal}) => {
@@ -38,7 +38,7 @@ return(
                 </div>
                 <div className="offset-lg-1 col-lg-3 col-md-6 banner-right">
                     <ReactPlayer
-                        url={militaryVideo}
+                        url='../media/military.mp4'
                         controls={true}
                         loop={true}
                         playing={true}

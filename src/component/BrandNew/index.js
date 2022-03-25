@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player';
-import runningVideo from '../../videos/running.mp4';
+// import runningVideo from '/static/videos/running.mp4';
 import './style.scss'
 
 const BrandNew = ({onOpenModal}) => {
@@ -11,7 +11,7 @@ return(
             <div className="row brand-inner">
                 <div className="offset-lg-1 col-lg-3 col-md-6 brand-left">
                     <ReactPlayer
-                        url={runningVideo}
+                        url='../media/running.mp4'
                         controls={true}
                         loop={true}
                         playing={true}
